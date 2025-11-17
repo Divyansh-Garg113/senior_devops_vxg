@@ -28,7 +28,9 @@ Provision an AWS EC2 instance, install k3s, deploy a sample application, and dem
   - k3s is installed in EC2 instance.
   - A sample Nginx application is deployed in k3s using a Helm chart.
   - Prometheus is deployed in k3s cluster using a Helm chart
-- Using `port-forwarding` and `curl` command, metics collection by Prometheus is verified (results below with commands and screenshot)
+- Using `port-forwarding` and `curl` command, metics collection by Prometheus is verified.
+
+![k3s_provision_script_successful_execution.png](./screenshots/k3s_provision_script_successful_execution.png)
 
 # Verifying K3s cluster and application deployment in EC2
 

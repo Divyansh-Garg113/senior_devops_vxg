@@ -37,4 +37,3 @@ su - ubuntu -c "helm repo add prometheus-community https://prometheus-community.
 su - ubuntu -c "helm repo update"
 su - ubuntu -c "helm install nginx-app bitnami/nginx --namespace nginx --create-namespace"
 su - ubuntu -c "helm install prometheus prometheus-community/prometheus --namespace monitoring --create-namespace"
-

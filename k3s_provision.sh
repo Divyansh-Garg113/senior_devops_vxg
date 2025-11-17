@@ -142,7 +142,9 @@ echo "=== Verifying AWS Resources ==="
 verify_aws_resource "vpc" "$VPC_ID" || exit 1
 verify_aws_resource "subnet" "$SUBNET_ID" "$VPC_ID" || exit 1
 
-# Handle security group
+############################################
+# security group
+############################################
 if [[ -n "$SECURITY_GROUP_ID" ]]; then
   verify_aws_resource "security-group" "$SECURITY_GROUP_ID" "$VPC_ID" || exit 1
 else
@@ -162,7 +164,7 @@ else
 fi
 
 ############################################
-# Handle Key Pair
+# Key Pair
 ############################################
 KEY_NAME="${KEY_NAME%.pem}"  # Remove .pem if present
 
